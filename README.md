@@ -2,10 +2,7 @@
 
 An AI-driven CRM that turns Meta Lead Ads into qualified WhatsApp conversations, runs template-based marketing campaigns, and tracks delivery, cost, and pipeline health in one dashboard — built on Firebase.
 
-![Architecture Overview](docs/screenshots/architecture-overview.png)
-*(placeholder — full system architecture screenshot)*
-
-**[Live Demo](#)** &nbsp;·&nbsp; **[Demo Video](#)**
+<img width="1906" height="870" alt="Screenshot 2026-07-14 113647" src="https://github.com/user-attachments/assets/ce0f6883-5d90-4208-bbbc-e6a25643394c" />
 
 ---
 
@@ -37,19 +34,128 @@ The result is one CRM where the AI agent, the human sales team, and the campaign
 8. **The dashboard updates as all of this happens** — leads, opportunities, messages, campaign performance, and estimated spend, all backed by counters that update the moment each event happens, not by periodic recomputation.
 
 ---
-
 ## Screenshots
 
-| | |
-|---|---|
-| ![Dashboard](docs/screenshots/dashboard.png) **Dashboard** — leads, opportunities, messages, and estimated cost at a glance. | ![Campaigns](docs/screenshots/campaigns.png) **Campaigns** — launch, monitor, pause, and retry WhatsApp broadcasts. |
-| ![Templates](docs/screenshots/templates.png) **Templates** — synced WhatsApp template catalog with approval status. | ![Chat CRM](docs/screenshots/chat-crm.png) **Chat CRM** — the live WhatsApp thread, AI and human messages side by side. |
-| ![Smart Leads](docs/screenshots/smart-leads.png) **Smart Leads** — pipeline board of opportunities with extracted requirements. | ![Properties](docs/screenshots/properties.png) **Properties** — the listing catalog the AI agent searches against. |
-| ![Opportunities](docs/screenshots/opportunities.png) **Opportunities** — a customer's individual searches, tracked separately over time. | ![Admin Dashboard](docs/screenshots/admin-dashboard.png) **Admin Dashboard** *(coming soon)* — team-level controls and permissions. |
+### 📊 Dashboard
 
-*(all screenshots are placeholders — to be added)*
+<img width="1906" height="896" alt="Screenshot 2026-07-14 122255" src="https://github.com/user-attachments/assets/c4f47381-dab2-4638-a35c-90b5a20ca073" />
+
+* **Overall Metrics:** Displays real-time counts of your total leads, active pipeline opportunities, running campaigns, and daily message volumes.
+* **CRM Usage Data:** Tracks your live operational costs, including estimated WhatsApp API fees and AI model token spend.
+* **Leads Analysis:** Visualizes incoming lead volume trends and details the split between automated AI interactions and human conversations.
+* **Campaigns Status & Breakdown:** Provides an interactive donut chart showing active marketing broadcasts categorized by their status (queued, sending, or completed).
 
 ---
+
+### 💬 Chat CRM
+
+<table>
+<tr>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/6d3326e0-ef19-410b-a56f-7116c7eea2d7" />
+</td>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/c9aaf63e-02e7-4fda-a8c0-f22cf79186aa" />
+</td>
+</tr>
+</table>
+
+* **Conversation List:** A central inbox showing all customer chats, sorted by recency, with live status indicators.
+* **Lead Filters:** Quick-toggle tabs to filter your inbox by hot, warm, cold, or high-priority leads needing an immediate reply.
+* **Contact Search:** An instant search bar to find specific conversations by customer name or phone number.
+* **Latest Messages:** The live chat timeline showing automated AI responses and human agent messages side-by-side.
+* **Profile Controls:** Toggle switches to instantly hand the conversation over to a human agent, silencing the AI for manual follow-up.
+* **Lead Score:** A dynamic rating (out of 100) calculated from customer engagement and requirements to highlight high-value leads.
+* **Contact Sidebar:** A detailed panel displaying extracted customer data, active requirements (budget, location, timeline), and scheduled property visits.
+
+---
+
+### 📋 Smart Leads
+
+<table>
+<tr>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/06d60551-79fe-4c80-a805-171706e394f4" />
+</td>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/b57f2890-34f3-46f3-a033-fff39bdaacaa" />
+</td>
+</tr>
+</table>
+
+* **Search and Navigation:** Fast filtering tools to search your entire pipeline database by lead name, phone number, or lead temperature.
+* **Detailed Contact View:** Clickable cards displaying contact details, lead quality scores, and current pipeline status.
+* **Extracted Lead Details:** Shows structured details parsed automatically from the chat history, including budget limits, preferred locations, and target timeline.
+* **Direct Communication:** A one-click "Open Chat" action to jump straight into the live conversation thread for that lead.
+
+---
+
+### 🏡 Properties & Listing Catalog
+
+<table>
+<tr>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/4cbfdb60-0d97-4245-8b86-1afd1ae74319" />
+</td>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/7f12ac85-7277-4663-be6f-68f56d3f3320" />
+</td>
+</tr>
+</table>
+
+* **Property Search:** Search through the live real estate directory by project name, locality, or builder.
+* **Listing Filters:** Quick drop-down selectors to filter listings by listing type (Sale vs. Rent) or property category.
+* **Quick Add:** An easy form to add new properties to your catalog instantly.
+* **Property Card:** Visual cards containing images, pricing, unit configurations (bedrooms/bathrooms), and area details. The AI agent queries these cards directly to recommend listings.
+
+---
+
+### 📢 Campaigns
+
+<img width="1912" height="870" alt="Screenshot 2026-07-14 114612" src="https://github.com/user-attachments/assets/8d39e8f3-a288-4b76-be85-86158818bfc4" />
+
+* **Campaign Cards:** Standalone cards for each broadcast, displaying the template used, recipient metrics, and dispatch details.
+* **Status Filters:** Sort your broadcasts by their current lifecycle state (Draft, Queued, Sending, Completed, or Failed).
+* **Campaign Metrics:** Live counters showing how many messages were successfully sent, delivered, read, or failed for each broadcast.
+* **New Campaign:** A streamlined setup wizard to segment leads and configure a new template-based broadcast.
+
+---
+
+### 📝 Templates
+
+<table>
+<tr>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/e102b0db-5ec8-445d-8e41-6fe0a4400612" />
+</td>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/eefef9d4-f8fb-4115-a13e-0c6da0d716b8" />
+</td>
+</tr>
+<tr>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/9c064c5f-a05b-4d04-a531-5615362fac23" />
+</td>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/ff7acfe4-42a4-4f7f-9b83-bb8e64ebf02c" />
+</td>
+</tr>
+</table>
+
+* **Template Search & Filters:** Easily look up templates by name, approval status (Approved, Pending, Rejected), or business category (Marketing, Utility, Authentication).
+* **Template Manager:** A control center to synchronize your template catalog with Meta's servers or create new layout designs.
+* **Templates List:** A structured directory showing template details, languages, and verification status. This ensures marketing campaigns only deploy approved templates.
+
+---
+
+### 📈 Insights Table
+
+<img width="1912" height="872" alt="Screenshot 2026-07-14 114857" src="https://github.com/user-attachments/assets/80cb7552-b603-4b1d-9e8d-0e2c73a16dc1" />
+
+* **Page Header:** Displays total lead metrics and describes the active table filters.
+* **Insights Table:** A comprehensive spreadsheet view compiling every customer's contact details and extracted properties.
+* **Lead Status:** Highlights whether a lead has responded, qualified, or requested a property visit.
+* **Sortable Columns:** Interactive columns allowing you to instantly sort leads by criteria such as budget size, bedroom requirements, or location.
 
 ## System Architecture
 
@@ -182,30 +288,6 @@ Keeping cost, delivery, and pipeline metrics in their own aggregate documents (r
 
 ---
 
-## Folder Structure
-
-```
-functions/
-  src/
-    agent.js                   # LangChain agent — intent-gated property search
-    intentClassifier.js        # Message intent classification
-    opportunities.js           # Customer -> opportunities model
-    campaigns.js                # Campaign state machine + lifecycle transitions
-    campaignQueue.js            # Cloud Tasks dispatch loop for campaign sends
-    processCampaignRecipient.js # Per-recipient send worker
-    whatsappTemplates.js        # Template sync + campaign-eligibility checks
-    whatsappWebhook.js          # Inbound messages + delivery status webhook
-    metrics.js                  # Incremental dashboard metrics engine
-    leadsWebhook.js              # Meta Lead Ads webhook
-frontend/
-  src/
-    pages/                      # Dashboard, Campaigns, ChatCRM, SmartLeads, ...
-    components/                 # Shared UI + dashboard widgets
-    lib/                        # Client-side helpers (formatting, scoring, metrics)
-```
-
----
-
 ## Future Roadmap
 
 - Multi-tenancy
@@ -221,7 +303,7 @@ frontend/
 
 ## Repository Notes
 
-This is a showcase version of the project. Production secrets, credentials, and some environment-specific configuration have been intentionally excluded.
+This is a showcase version of the project.
 
 ---
 
