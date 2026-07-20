@@ -182,6 +182,9 @@ flowchart TD
     CRM --> Dashboard[Dashboard]
 ```
 
+<img width="1536" height="1024" alt="ChatGPT Image Jul 21, 2026, 01_53_53 AM" src="https://github.com/user-attachments/assets/f66ce371-f4d2-4cae-919b-1d41a7b5f9fe" />
+
+
 **Flow, in words:** a customer message arrives via the WhatsApp Cloud API, hits a Cloud Functions webhook, and is handed to the AI agent, which searches properties and updates the opportunity pipeline. Campaigns run through a separate Cloud Tasks-backed engine that sends via the same Meta Graph API and reads from the synced template catalog. Every write — from a single chat turn to a campaign send — flows into Firestore, where the metrics engine keeps dashboard counters current, and the React CRM reads all of it live.
 
 ---
